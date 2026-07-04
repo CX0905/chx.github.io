@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="zh-CN">
   <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>陈曦 · 具身算法 / CV算法</title>
@@ -13,94 +13,61 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GNJD50R0Z7"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    if (window.location.hostname === 'tyleransom.github.io') {
+      gtag('config', 'G-GNJD50R0Z7');
+    }
+    </script>
+
     <!-- For all browsers -->
     <link rel="stylesheet" href="assets/css/academicons.min.css"/>
     <link rel="stylesheet" href="assets/css/academicons.css"/>
 
     <style>
       button.accordion {
-        font: 14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-        cursor: pointer;
-        padding: 0px;
-        border: none;
-        text-align: left;
-        outline: none;
-        font-size: 100%;
-        transition: 0.3s;
-        background-color: #f8f8f8;
+      font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      cursor: pointer;
+      padding: 0px;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 100%;
+      transition: 0.3s;
+      background-color: #f8f8f8;
       }
       button.accordion.active, button.accordion:hover {
-        background-color: #f8f8f8;
+      background-color: #f8f8f8;
       }
       button.accordion:after {
-        content: " [+] ";
-        font-size: 90%;
-        color:#777;
-        float: left;
-        margin-left: 1px;
+      content: " [+] ";
+      font-size: 90%;
+      color:#777;
+      float: left;
+      margin-left: 1px;
       }
       button.accordion.active:after {
-        content: " [\2212] ";
+      content: " [\2212] ";
       }
       div.panel {
-        padding: 0 20px;
-        margin-top: 5px;
-        display: none;
-        background-color: white;
-        font-size: 100%;
+      padding: 0 20px;
+      margin-top: 5px;
+      display: none;
+      background-color: white;
+      font-size: 100%;
       }
       div.panel.show {
-        display: block !important;
+      display: block !important;
       }
       .social-row {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-      }
-      .profile-img {
-        border-radius: 50%;
-        width: 180px;
-        height: 180px;
-        object-fit: cover;
-        background: #e8f0f8;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 4rem;
-        color: #2c5a8a;
-        margin-bottom: 1rem;
-      }
-      .profile-img-placeholder {
-        border-radius: 50%;
-        width: 180px;
-        height: 180px;
-        background: #dce8f5;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 5rem;
-        color: #2c5a8a;
-        margin-bottom: 1rem;
-        font-weight: 300;
-      }
-      .pub-badge {
-        background: #eef3f8;
-        padding: 0.1rem 0.6rem;
-        border-radius: 12px;
-        font-size: 0.7rem;
-        font-weight: 600;
-        color: #1a4a6b;
-        display: inline-block;
-        margin-left: 0.3rem;
-      }
-      .skill-tag {
-        background: #eef3f8;
-        padding: 0.1rem 0.7rem;
-        border-radius: 20px;
-        font-size: 0.8rem;
-        display: inline-block;
-        margin: 0.1rem 0.2rem;
-        color: #1a3d5e;
       }
     </style>
   </head>
@@ -108,159 +75,41 @@
     <div class="wrapper">
       <header>
         <h1>陈曦 · Xi Chen</h1>
-        <p>具身算法工程师 / CV算法工程师</p>
-        <p>中国科学技术大学 · 网络空间安全学院</p>
-        <p>中共预备党员 · 安徽淮南</p>
-
-        <h3><a href="#home">首页</a></h3>
-        <h3><a href="#research">研究项目</a></h3>
-        <h3><a href="#cv">简历</a></h3>  
-        <h3><a href="#code">代码</a></h3> 
-        <h3><a href="#honors">荣誉</a></h3> 
-
-        <b>联系方式</b>
+        <p>具身算法工程师 / CV算法工程师<br>中国科学技术大学</p>
+        <p>中共预备党员<br>安徽淮南</p>
+        <p>实习时长：6个月及以上</p>
+        <h3><a href="index.html">首页</a></h3>
+        <h3><a href="research.html">研究项目</a></h3>
+        <h3><a href="research/CV.pdf">简历</a></h3>  
+        <h3><a href="code.html">代码</a></h3> 
+        <h3><a href="teaching.html">教学</a></h3> 
+        <h3><a href="personal.html">个人</a></h3>
+        <b>联系方式</b><br>
         <div class="social-row">
-          <a href="mailto:cx20050905@mail.ustc.edu.cn" target="_blank"><i class="fas fa-fw fa-envelope"></i> 邮箱</a>
-          <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-fw fa-github"></i> GitHub</a>
-          <a href="#" target="_blank"><i class="fab fa-fw fa-linkedin"></i> LinkedIn</a>
-          <a href="#" target="_blank"><i class="fab fa-fw fa-google-scholar"></i> Scholar</a>
+          <a href="mailto:cx20050905@mail.ustc.edu.cn" target="_blank"><i class="fas fa-fw fa-envelope"></i> 邮箱</a><br>
+          <a href="#" target="_blank"><i class="ai ai-fw ai-google-scholar"></i> Scholar</a><br>
+          <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-fw fa-github"></i> GitHub</a><br>
+          <a href="#" target="_blank"><i class="fab fa-fw fa-linkedin"></i> LinkedIn</a><br>
           <br>
         </div>
         <br>
 
-        <p><b>联系方式：</b><br>
-        中国科学技术大学<br>
-        网络空间安全学院<br>
-        安徽省合肥市<br>
-        📱 13696772752</p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+    <p><b>联系方式：</b><br>中国科学技术大学<br>网络空间安全学院<br>安徽省合肥市<br>📱 13696772752</p>
+    <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </header>
-
       <section>
-        <!-- 头像占位 -->
-        <div class="profile-img-placeholder">👩‍💻</div>
-        <!-- 或者如果您有照片：<img src="your-photo.jpg" class="profile-img" alt="陈曦"> -->
+      <div style="font-size: 6rem; text-align: center; margin-bottom: 0.5rem;">👩‍💻</div>
+      <!-- 如有照片请替换为：<img src="Headshot.jpg" height="250" width="335" alt="陈曦"> -->
 
-        <h2>👋 关于我</h2>
-        <p>
-          我是中国科学技术大学网络空间安全学院信息安全专业本科生（2023级），中共预备党员。
-          我致力于<strong>具身智能</strong>与<strong>计算机视觉</strong>领域的研究，特别关注：
-        </p>
-        <ul>
-          <li><strong>具身智能安全</strong>：提升机器人在复杂物理环境下的行为安全性</li>
-          <li><strong>3D视觉重建与编辑</strong>：3DGS、NeRF、扩散模型等前沿技术</li>
-          <li><strong>Sim-to-Real迁移</strong>：从仿真到真机部署的完整链路</li>
-        </ul>
+  <p>我是中国科学技术大学网络空间安全学院信息安全专业本科生（2023级），中共预备党员，来自安徽淮南。我致力于<strong>具身智能</strong>与<strong>计算机视觉</strong>领域的研究。</p>
 
-        <p>
-          我系统掌握了机器人操作系统（ROS/ROS2）、Gazebo/RViz仿真调试、宇树G1实机部署等工程能力；
-          同时具备扎实的数学基础（线性代数、概率论、优化理论）和深度学习框架（PyTorch）开发经验。
-        </p>
+  <p>我的研究聚焦于<strong>具身智能安全</strong>、<strong>3D视觉重建与编辑</strong>以及<strong>Sim-to-Real迁移</strong>。我系统掌握了机器人操作系统（ROS/ROS2）、Gazebo/RViz仿真调试、宇树G1实机部署等工程能力，同时具备扎实的数学基础（线性代数、概率论、优化理论）和深度学习框架（PyTorch）开发经验。</p>
 
-        <hr>
+  <p>我参与了网络空间安全学院系统安全组的具身智能安全研究，以及苏州人工智能重点实验室的面向安全关键场景的具身世界模型项目。此外，我完整复现了CVPR 2025的VoxHammer框架，完成了从TRELLIS到TRELLIS.2-4B的完整移植。</p>
 
-        <h2 id="research">🔬 研究项目</h2>
+  <p>在竞赛方面，我作为校二队队长获得了2024 CCPC重庆站二等奖，并作为建模组副组长在iGEM 2025中斩获全球金奖。我具备熟练的编程能力，精通Python/PyTorch，熟悉ROS/ROS2、Gazebo、Isaac Gym等仿真环境，以及3DGS、NeRF、扩散模型等前沿技术。</p>
 
-        <h3>具身智能安全 · 系统安全组</h3>
-        <p><em>2025.05 – 2026.04</em></p>
-        <ul>
-          <li>系统学习人形机器人基础理论与操作方法，掌握ROS/ROS2架构</li>
-          <li>基于Gazebo、RViz进行机器人仿真与可视化调试，具备仿真到实物迁移能力</li>
-          <li>提升机器人在复杂物理环境下的行为安全性，论文在投 <span class="pub-badge">CCS 2026</span></li>
-        </ul>
-
-        <h3>面向安全关键场景的具身世界模型</h3>
-        <p><em>苏州人工智能重点实验室 · 2026.04 – 今</em></p>
-        <ul>
-          <li><strong>Sim-to-Real：</strong>化学实验室资产合成、多体仿真、任务训练与真机迁移</li>
-          <li><strong>WAM框架：</strong>多层预测与风险评估系统，物理因果链推演+资产风险属性</li>
-          <li>感知-行动-后果闭环，实现异常临界状态自动触发警报</li>
-        </ul>
-
-        <h3>3D视觉重建与编辑 · 调研复现</h3>
-        <p><em>2026.04 – 2026.06</em></p>
-        <ul>
-          <li>系统梳理3DGS、NeRF、SLAM/SFM、SDS优化、多视图编辑、原生3D扩散等范式</li>
-          <li>完整复现 <strong>CVPR 2025 VoxHammer</strong> 免训练3D局部编辑框架</li>
-          <li>实现RF-Solver反演、KV替换、隐变量编辑等核心模块</li>
-          <li>完成VoxHammer从TRELLIS到TRELLIS.2-4B完整移植，解决7大技术难点</li>
-        </ul>
-
-        <hr>
-
-        <h2 id="honors">🏅 荣誉与竞赛</h2>
-
-        <ul>
-          <li><strong>iGEM 2025 全球金奖</strong> · 建模组副组长（数学建模与编程）</li>
-          <li><strong>CCPC 重庆站 二等奖</strong> · 校二队队长</li>
-          <li><strong>2025 奋进奖学金</strong> · 综测排名 12/71</li>
-          <li>2023-2024 校级优秀共青团员</li>
-          <li>2023-2024 校级优秀共青团干部</li>
-        </ul>
-
-        <hr>
-
-        <h2 id="cv">📄 简历</h2>
-        <p>
-          <a href="./cv.pdf" download style="font-size: 1.1rem;">
-            <i class="fas fa-file-pdf"></i> 下载PDF简历
-          </a>
-          &nbsp;|&nbsp;
-          <a href="./cv.pdf" target="_blank">
-            <i class="fas fa-eye"></i> 在线预览
-          </a>
-        </p>
-
-        <hr>
-
-        <h2 id="code">💻 技术栈</h2>
-        <p>
-          <span class="skill-tag">Python/PyTorch</span>
-          <span class="skill-tag">ROS/ROS2</span>
-          <span class="skill-tag">Gazebo</span>
-          <span class="skill-tag">Isaac Gym</span>
-          <span class="skill-tag">3DGS</span>
-          <span class="skill-tag">NeRF</span>
-          <span class="skill-tag">扩散模型</span>
-          <span class="skill-tag">SLAM/SFM</span>
-          <span class="skill-tag">VoxHammer</span>
-          <span class="skill-tag">宇树G1</span>
-          <span class="skill-tag">LaTeX</span>
-          <span class="skill-tag">Git</span>
-        </p>
-
-        <hr>
-
-        <h2>📚 教育背景</h2>
-        <p>
-          <strong>中国科学技术大学</strong><br>
-          网络空间安全学院 · 信息安全专业（2023.09 – 2027.06）<br>
-          GPA 3.25/4.30 · 专业排名 13/30<br>
-          主修课程：随机过程(95)、数据建模(95)、机器学习(94)、复杂系统分析(92)
-        </p>
-
-        <hr>
-
-        <h2>🗣️ 语言</h2>
-        <ul>
-          <li>中文 · 母语</li>
-          <li>英语 · 熟练（技术文档读写、学术交流）</li>
-        </ul>
-
-        <hr>
-
-        <h2>📌 实习意向</h2>
-        <p>
-          <strong>具身算法工程师 / CV算法工程师</strong><br>
-          实习时长：6个月及以上 · 可立即到岗
-        </p>
-
-        <hr>
-
-        <p style="color: #555; font-size: 0.85rem;">
-          <i class="fas fa-calendar-alt"></i> 最后更新：2026年7月 &nbsp;|&nbsp;
-          <i class="fas fa-map-marker-alt"></i> 中国科学技术大学 · 网络空间安全学院
-        </p>
+  <p>我目前正在寻求<strong>具身算法工程师</strong>或<strong>CV算法工程师</strong>的实习机会，实习时长6个月及以上，可立即到岗。</p>
       </section>
     </div>
     <script src="javascripts/scale.fix.js"></script>
